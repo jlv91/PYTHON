@@ -11,12 +11,13 @@ RUN apt-get update && apt-get install -y \
             && apt-get clean
 
 # Définir le répertoire de travail dans le conteneur
-WORKDIR /PYTHON
-
+WORKDIR /
 
 # Cloner le repository en utilisant le token du secret 
 # juste pour tester car le token reste dans l'environnement git pour pouvoir y accéder
 RUN --mount=type=secret,id=GITHUB_TOKEN git clone  https://$(cat /run/secrets/GITHUB_TOKEN)@github.com/jlv91/PYTHON.git
+
+WORKDIR /PYTHON 
 
 # git config local
 ARG USER_NAME

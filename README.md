@@ -15,6 +15,6 @@ Pour créer le container:
 Pour exécuter le container:
 <br>
 <code>docker run -it --rm -e DISPLAY=192.168.1.148:0.0 python-dev</code>
-<br>Le serveur X doit être lancé pour afficher les fenêtre matplotlib.
-<br>Attacher VsCode au container
-<br>Laisser VsCode installer les extensions nécessaires au développement Python comme Jupyter, Pylance
+<li>Le serveur X doit être lancé pour afficher les fenêtres matplotlib.
+<li>Attacher VsCode au container
+<li>Laisser VsCode installer les extensions nécessaires au développement Python comme Jupyter, Pylance
